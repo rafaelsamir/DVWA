@@ -1,4 +1,11 @@
 # PHP
+- task: QualysWASConnector@4
+  inputs:
+    webApplication: '406100919-Test Poc DVWA'
+    scanType: 'VULNERABILITY'
+    dataCheckFrequency: '5'
+    waitTimeforScanResult: '60*24'
+    WasService: 'was api server on qualysqg3'
 # Test and package your PHP project.
 # Add steps that run tests, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/php
